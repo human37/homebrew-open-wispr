@@ -1,7 +1,7 @@
 class OpenWispr < Formula
   desc "Push-to-talk voice dictation for macOS using Whisper"
   homepage "https://github.com/human37/open-wispr"
-  url "https://github.com/human37/open-wispr.git", tag: "v0.7.0"
+  url "https://github.com/human37/open-wispr.git", tag: "v0.8.0"
   license "MIT"
 
   depends_on "whisper-cpp"
@@ -33,11 +33,13 @@ class OpenWispr < Formula
       Run it:
         brew services start open-wispr
 
-      On first launch, macOS will prompt for Accessibility and Microphone.
-      Grant both, then restart:
-        brew services restart open-wispr
+      On first launch:
+        1. Grant Microphone access when prompted
+        2. Enable OpenWispr in System Settings → Privacy & Security → Accessibility
+        3. The Whisper model downloads automatically (~142 MB)
 
-      The Whisper model downloads automatically on first use.
+      After granting permissions, restart:
+        brew services restart open-wispr
     EOS
   end
 
