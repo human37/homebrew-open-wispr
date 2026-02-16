@@ -1,7 +1,7 @@
 class OpenWispr < Formula
   desc "Push-to-talk voice dictation for macOS using Whisper"
   homepage "https://github.com/human37/open-wispr"
-  url "https://github.com/human37/open-wispr.git", tag: "v0.9.7"
+  url "https://github.com/human37/open-wispr.git", tag: "v0.9.8"
   license "MIT"
 
   depends_on "whisper-cpp"
