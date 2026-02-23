@@ -4,6 +4,11 @@ class OpenWispr < Formula
   url "https://github.com/human37/open-wispr.git", tag: "v0.10.0"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/human37/open-wispr/releases/download/v0.10.0"
+    sha256 cellar: :any, arm64_sequoia: "b6c5ec8f76bc2877ea2d959d18d08ddf671f173d4425ab616f8350e8ae34e475"
+  end
+
   depends_on "whisper-cpp"
   depends_on :macos
 
