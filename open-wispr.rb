@@ -24,6 +24,7 @@ class OpenWispr < Formula
     target = Pathname.new("#{Dir.home}/Applications/OpenWispr.app")
     target.dirname.mkpath
     ln_sf prefix/"OpenWispr.app", target
+    system "tccutil", "reset", "Accessibility", "com.human37.open-wispr"
   end
 
   service do
