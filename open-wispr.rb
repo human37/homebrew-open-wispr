@@ -26,7 +26,6 @@ class OpenWispr < Formula
     target = Pathname.new("#{Dir.home}/Applications/OpenWispr.app")
     target.dirname.mkpath
     ln_sf prefix/"OpenWispr.app", target
-    system "tccutil", "reset", "Accessibility", "com.human37.open-wispr"
   end
 
   service do
@@ -47,6 +46,9 @@ class OpenWispr < Formula
 
       Grant Accessibility and Microphone when prompted.
       The Whisper model downloads automatically (~142 MB).
+
+      After upgrading, you may need to re-grant Accessibility permission:
+        System Settings → Privacy & Security → Accessibility → toggle open-wispr
     EOS
   end
 
