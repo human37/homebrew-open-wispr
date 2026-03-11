@@ -6,8 +6,9 @@ class OpenWispr < Formula
 
   bottle do
     root_url "https://github.com/human37/open-wispr/releases/download/v0.16.0"
-    sha256 cellar: :any, arm64_sequoia: "28dd7db6017199a2109880f70bead34a5fd2a9a873c3c90e7ae8938ac6f121c7"
+    sha256 cellar: :any, arm64_sequoia: "f79e237fe5c5d4c6bc7259582fa9c1b1d1911aac6619ef87c22450988cd3dffa"
   end
+
 
 
 
