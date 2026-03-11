@@ -33,7 +33,10 @@ class OpenWispr < Formula
   def post_install
     target = Pathname.new("#{Dir.home}/Applications/OpenWispr.app")
     target.dirname.mkpath
+    rm_rf target if target.exist? && !target.symlink?
     ln_sf prefix/"OpenWispr.app", target
+    system "tccutil", "reset", "Accessibility", "com.human37.open-wispr"
+    system "tccutil", "reset", "Microphone", "com.human37.open-wispr"
   end
 
   service do
