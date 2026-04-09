@@ -73,9 +73,6 @@ class OpenWispr < Formula
 
       Grant Accessibility and Microphone when prompted.
       The Whisper model downloads automatically (~142 MB).
-
-      After upgrading, you may need to re-grant Accessibility permission:
-        System Settings → Privacy & Security → Accessibility → toggle open-wispr
     EOS
   end
 
