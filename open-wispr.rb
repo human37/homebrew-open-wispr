@@ -5,9 +5,10 @@ class OpenWispr < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/human37/open-wispr/releases/download/v0.43.0"
-    sha256 cellar: :any, arm64_sequoia: "691b8b11a7499097000db1fe8f29d8117eb6d085881805e04bc7c89d45581550"
+    root_url "https://github.com/human37/open-wispr/releases/download/v0.44.0"
+    sha256 cellar: :any, arm64_sequoia: "3156eafe59419f99f57fc3df741129e29a13ad7f941ef95ad0e22a190a843eea"
   end
+
 
 
 
